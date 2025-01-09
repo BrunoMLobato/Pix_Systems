@@ -1,0 +1,36 @@
+.sidebar {
+  background-color: #C7E7E8;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004d4d;
+  margin-bottom: 30px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  font-size: 1rem;
+  color: #005a5a;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu li svg {
+  margin-right: 10px;
+}
+
+.menu li:hover {
+  color: #002626;
+}

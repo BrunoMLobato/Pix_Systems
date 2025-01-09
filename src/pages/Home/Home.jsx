@@ -1,9 +1,19 @@
-function Home() {
-    return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
-    );
-}
+import React from 'react';
+import Sidebar from './components/Sidebar/Sidebar.jsx';
+import Header from './components/Header/Header.jsx';  
+import Dashboard from './components/Dashboard/Dashboard.jsx';
+import './App.css';
 
-export default Home;
+const App = () => {
+  return (
+    <div className="app">
+      <Sidebar />
+      <div className="main-content">
+        <Header />
+        <Dashboard />
+      </div>
+    </div>
+  );
+};
+
+export default App;
