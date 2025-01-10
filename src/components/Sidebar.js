@@ -5,7 +5,7 @@ import './Sidebar.css';
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="logo">PIXYSTEMS</div>
+      <div className="logo">PIXSYSTEMS</div>
       <ul className="menu">
         <li><FaHome /> Dashboard</li>
         <li><FaShoppingCart /> PDV</li>
