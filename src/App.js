@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import PDV from './components/PDV';
+import Stock from './components/Stock';
 import './App.css';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/dashboard" element={<Dashboard />} /> {/* Dashboard */}
             <Route path="/" element={<Dashboard />} /> {/* Dashboard */}
             <Route path="/pdv" element={<PDV />} /> {/* PDV */}
+            <Route path="/estoque" element={<Stock />} />
           </Routes>
         </div>
       </div>

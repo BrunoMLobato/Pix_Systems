@@ -1,32 +1,56 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .home {
-    flex: 1;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .user-info span {
-    font-size: 14px;
-  }
-  
-  .avatar {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Remover o padding vertical */
+  background-color: #C7E7E9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 90px; /* Altura do cabeçalho */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Alinha o nome e o logo no centro */
+  gap: 10px;
+}
+
+.logo {
+  height: 40px; /* Tamanho fixo do logo */
+  width: auto;
+  margin-top: 10px; /* Ajusta o logo para baixo */
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1D3557;
+}
+
+.home {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1D3557;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1D3557;
+}
+
+.user-info span {
+  font-size: 14px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}

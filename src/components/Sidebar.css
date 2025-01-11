@@ -11,7 +11,7 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1D3557; /* Azul escuro para contraste */
+  color: #457B9D; /* Azul escuro para contraste */
   margin-bottom: 30px;
   text-align: center; /* Centraliza o texto */
   letter-spacing: 1px; /* Espaçamento das letras */
@@ -25,7 +25,7 @@
 
 .menu li {
   font-size: 1rem;
-  color: #1D3557;
+  color: #457B9D;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -41,8 +41,8 @@
 }
 
 .menu li:hover {
-  background-color: #1D3557; /* Fundo azul escuro no hover */
-  color: #A5D8DD; /* Texto claro no hover */
+  background-color: #ffff; /* Fundo azul escuro no hover */
+  color: #457B9D; /* Texto claro no hover */
 }
 
 .menu li a {
