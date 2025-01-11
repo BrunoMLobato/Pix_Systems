@@ -23,8 +23,9 @@
   .main-content {
     display: flex;
     flex-direction: column;
-    background-color: #A5D8DD;
+    background-color: #A8DADC;
     overflow-y: auto;
     padding: 20px;
+    margin-top: 60px;
   }
   

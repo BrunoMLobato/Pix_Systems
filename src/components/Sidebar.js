@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importando Link para navegação
 import { FaHome, FaShoppingCart, FaBoxes, FaFileInvoice, FaChartBar, FaUsers, FaCog, FaSignOutAlt } from 'react-icons/fa';
 import './Sidebar.css';
 
@@ -7,14 +8,46 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="logo">PIXSYSTEMS</div>
       <ul className="menu">
-        <li><FaHome /> Dashboard</li>
-        <li><FaShoppingCart /> PDV</li>
-        <li><FaBoxes /> Estoque</li>
-        <li><FaFileInvoice /> NFs</li>
-        <li><FaChartBar /> Relatórios</li>
-        <li><FaUsers /> Clientes</li>
-        <li><FaCog /> Configurações</li>
-        <li><FaSignOutAlt /> Sair</li>
+        <li>
+          <Link to="/"> {/* Link para Dashboard */}
+            <FaHome /> Dashboard
+          </Link>
+        </li>
+        <li>
+          <Link to="/pdv"> {/* Link para PDV */}
+            <FaShoppingCart /> PDV
+          </Link>
+        </li>
+        <li>
+          <Link to="/estoque"> {/* Exemplo de rota para Estoque */}
+            <FaBoxes /> Estoque
+          </Link>
+        </li>
+        <li>
+          <Link to="/nfs"> {/* Exemplo de rota para NFs */}
+            <FaFileInvoice /> NFs
+          </Link>
+        </li>
+        <li>
+          <Link to="/relatorios"> {/* Exemplo de rota para Relatórios */}
+            <FaChartBar /> Relatórios
+          </Link>
+        </li>
+        <li>
+          <Link to="/clientes"> {/* Exemplo de rota para Clientes */}
+            <FaUsers /> Clientes
+          </Link>
+        </li>
+        <li>
+          <Link to="/configuracoes"> {/* Exemplo de rota para Configurações */}
+            <FaCog /> Configurações
+          </Link>
+        </li>
+        <li>
+          <Link to="/sair"> {/* Exemplo de ação de sair */}
+            <FaSignOutAlt /> Sair
+          </Link>
+        </li>
       </ul>
     </div>
   );

@@ -1,0 +1,138 @@
+/* Estilização Geral */
+.stock-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Fundo geral */
+    min-height: 100vh;
+  }
+  
+  .stock-header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Campo Buscar Produto */
+  .search-input {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 50px; /* Bordas arredondadas */
+    outline: none;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Botão Filtros */
+  .filter-button {
+    padding: 10px 20px;
+    background-color: #e7e7e7;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: #d6d6d6;
+  }
+  
+  /* Botão Adicionar Produto */
+  .add-product-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-product-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Tabela de Produtos */
+  .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stock-table th,
+  .stock-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .stock-table th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .stock-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Indicadores de Status */
+  .status-indicator {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .status-ok {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status-alert {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  /* Botões de Ação */
+  .edit-button,
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .edit-button {
+    color: #007bff;
+  }
+  
+  .delete-button {
+    color: #dc3545;
+  }
+  
+  .edit-button:hover {
+    color: #0056b3;
+  }
+  
+  .delete-button:hover {
+    color: #a71d2a;
+  }
+  
