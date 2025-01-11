@@ -4,10 +4,7 @@ import './PDV.css'; // Arquivo CSS
 function PDV() {
   return (
     <div className="pdv-container">
-      <header className="pdv-header">
-        <div className="pdv-logo">PIX SYSTEMS</div>
-        <div className="pdv-user">Fulano <img src="/path/to/user-image.jpg" alt="Usuário" className="user-avatar" /></div>
-      </header>
+
 
       <main className="pdv-main">
         <section className="pdv-products">
