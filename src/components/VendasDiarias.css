@@ -1,0 +1,38 @@
+.vendas-diarias-container {
+    padding: 20px;
+}
+
+.vendas-diarias-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #223350;
+}
+
+.vendas-diarias-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.vendas-diarias-table th,
+.vendas-diarias-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vendas-diarias-table th {
+    background-color: #f4f4f4;
+}
+
+.vendas-diarias-table td {
+    background-color: #fff;
+}
+
+.vendas-diarias-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #223350;
+    ;
+}

@@ -1,0 +1,68 @@
+.relatorio-title {
+    font-size: 24px;
+    color: #223350;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo dos Cards */
+.relatorio-cards {
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.relatorio-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #223350;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-icon {
+    font-size: 20px;
+    color: #666;
+}
+
+.card-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-list li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.2s;
+}
+
+.card-list li:hover {
+    color: #223350;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 8px;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .relatorio-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .relatorio-card {
+        width: 100%;
+    }
+}
