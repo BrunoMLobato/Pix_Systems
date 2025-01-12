@@ -5,23 +5,24 @@ import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import PDV from './components/PDV';
 import Stock from './components/Stock';
+import Relatorio from './components/Relatorio';
+import VendasDiarias from './components/Vendasdiarias';
 import './App.css';
 
 const App = () => {
   return (
     <Router>
       <div className="app">
-        {/* Sidebar e Header sempre visíveis */}
         <Sidebar />
         <div className="main-content">
           <Header />
-
-          {/* Rotas para o conteúdo dinâmico */}
           <Routes>
-            <Route path="/dashboard" element={<Dashboard />} /> {/* Dashboard */}
-            <Route path="/" element={<Dashboard />} /> {/* Dashboard */}
-            <Route path="/pdv" element={<PDV />} /> {/* PDV */}
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/pdv" element={<PDV />} />
             <Route path="/estoque" element={<Stock />} />
+            <Route path="/relatorios" element={<Relatorio />} />
+            <Route path="/vendas-diarias" element={<VendasDiarias />} />
           </Routes>
         </div>
       </div>
