@@ -34,16 +34,6 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/clientes"> {/* Exemplo de rota para Clientes */}
-            <FaUsers /> Clientes
-          </Link>
-        </li>
-        <li>
-          <Link to="/configuracoes"> {/* Exemplo de rota para Configurações */}
-            <FaCog /> Configurações
-          </Link>
-        </li>
-        <li>
           <Link to="/sair"> {/* Exemplo de ação de sair */}
             <FaSignOutAlt /> Sair
           </Link>
