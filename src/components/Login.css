@@ -1,0 +1,89 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #A8DADC; /* Cor azul-claro de fundo */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    background-color: #A8DADC; /* Fundo da caixa de login */
+    border-radius: 20px;
+    padding: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    border: 3px solid white;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #01579b; /* Azul-escuro */
+  }
+  
+  p {
+    font-size: 14px;
+    color: #01579b;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #b0bec5;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  label i {
+    margin-right: 10px;
+    color: #01579b; /* Ícones em azul-escuro */
+  }
+  
+  input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    color: #01579b;
+    background-color: transparent;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #01579b;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    background-color: #01579b; /* Azul-escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .login-button:hover {
+    background-color: #013a63;
+  }
+  
