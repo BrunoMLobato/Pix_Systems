@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Stock.css';
 
 const Stock = () => {
+  const navigate = useNavigate();
+
   const products = [
     {
       name: 'iPhone 15',
@@ -44,7 +47,12 @@ const Stock = () => {
           className="search-input"
         />
         <button className="filter-button">Filtros</button>
-        <button className="add-product-button">Adicionar Produto</button>
+        <button
+          className="add-product-button"
+          onClick={() => navigate('/AdicionarProduto')} // Redireciona para a tela de Adicionar Produto
+        >
+          Adicionar Produto
+        </button>
       </div>
       <table className="stock-table">
         <thead>

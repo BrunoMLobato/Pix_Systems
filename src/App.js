@@ -7,6 +7,7 @@ import PDV from './components/PDV';
 import Stock from './components/Stock';
 import Relatorio from './components/Relatorio';
 import VendasDiarias from './components/Vendasdiarias';
+import AdicionarProduto from './components/AdicionarProduto';
 import './App.css';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/estoque" element={<Stock />} />
             <Route path="/relatorios" element={<Relatorio />} />
             <Route path="/vendas-diarias" element={<VendasDiarias />} />
+            <Route path="/AdicionarProduto" element={<AdicionarProduto />} />
           </Routes>
         </div>
       </div>
