@@ -20,7 +20,6 @@ const Relatorio = () => {
                         <li onClick={() => handleItemClick('/vendas-diarias')}>Vendas Diárias</li>
                         <li onClick={() => handleItemClick('/vendas-semanais')}>Vendas Semanais</li>
                         <li onClick={() => handleItemClick('/vendas-mensais')}>Vendas Mensais</li>
-                        <li onClick={() => handleItemClick('/produtos-mais-vendidos')}>Produtos mais vendidos</li>
                     </ul>
                 </div>
 
@@ -28,9 +27,10 @@ const Relatorio = () => {
                 <div className="relatorio-card">
                     <h2 className="card-title">Gráficos Detalhados</h2>
                     <ul className="card-list">
-                        <li onClick={() => handleItemClick('/graficos-barras')}>Gráficos em barras</li>
-                        <li onClick={() => handleItemClick('/graficos-linhas')}>Gráficos em linhas</li>
-                        <li onClick={() => handleItemClick('/graficos-pizza')}>Gráficos em pizza</li>
+                        <li onClick={() => handleItemClick('/graficosdetalhados')}>Todos os Gráficos</li>
+                        <li onClick={() => handleItemClick('/graficosbarra')}>Gráficos em barra</li>
+                        <li onClick={() => handleItemClick('/graficoslinha')}>Gráficos em linhas</li>
+                        <li onClick={() => handleItemClick('/graficospizza')}>Gráficos em pizza</li>
                     </ul>
                 </div>
 
