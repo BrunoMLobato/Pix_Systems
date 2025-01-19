@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import logo from '../imgs/pixlogo.png'; // Certifique-se de ter o arquivo logo.png na pasta correta
+import logo from '../imgs/pixlogo.png';
 
 const Header = () => {
   return (

@@ -6,24 +6,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
 body {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
     overflow-y: auto;
 }
-  
+
 .app {
     display: grid;
-    grid-template-columns: 250px 1fr; /* Define barra lateral e conteúdo principal */
+    grid-template-columns: 250px 1fr;
     height: 100vh;
 }
-  
+
 .main-content {
     display: flex;
     flex-direction: column;
     background-color: #A8DADC;
     overflow-y: auto;
     padding: 20px;
-    margin-top: 90px; /* Deve corresponder à altura do cabeçalho */
+    margin-top: 90px;
 }

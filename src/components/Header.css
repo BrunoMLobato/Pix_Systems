@@ -2,26 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; /* Remover o padding vertical */
+  padding: 0 20px;
   background-color: #C7E7E9;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: 90px; /* Altura do cabeçalho */
+  height: 90px;
 }
 
 .logo-container {
   display: flex;
-  align-items: center; /* Alinha o nome e o logo no centro */
+  align-items: center;
   gap: 10px;
 }
 
 .logo {
-  height: 40px; /* Tamanho fixo do logo */
+  height: 40px;
   width: auto;
-  margin-top: 10px; /* Ajusta o logo para baixo */
+  margin-top: 10px;
 }
 
 .logo-text {

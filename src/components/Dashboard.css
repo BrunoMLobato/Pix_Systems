@@ -38,9 +38,9 @@
     align-items: center;
 }
 
-/* Estilo geral para o time-selector */
+
 .time-selector {
-    background-color: #007bff; /* Azul */
+    background-color: #007bff;
     color: #fff;
     padding: 10px 15px;
     border-radius: 8px;
@@ -51,24 +51,22 @@
     cursor: pointer;
 }
 
-/* Estilo do dropdown (select) */
 .time-dropdown {
     background-color: transparent;
     color: #fff;
     border: none;
     font-size: 14px;
     cursor: pointer;
-    appearance: none; /* Remove o estilo padrão do seletor */
+    appearance: none;
     text-align: center;
 }
 
-/* Estilo do dropdown quando aberto */
+
 .time-dropdown option {
-    background-color: #ffffff; /* Fundo branco */
-    color: #000; /* Texto preto */
+    background-color: #ffffff;
+    color: #000;
 }
 
-/* Foco no dropdown para garantir boa usabilidade */
 .time-dropdown:focus {
     outline: none;
 }
