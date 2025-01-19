@@ -1,30 +1,38 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
-import './VendasDiarias.css';
+import './VendasSemanais.css';
 
-const VendasDiarias = () => {
+const VendasSemanais = () => {
     // Dados fictícios com itens e seus totais
     const [vendas, setVendas] = useState([
-        { id: 1, item: 'Produto A', total: 150 },
-        { id: 2, item: 'Produto B', total: 200 },
-        { id: 3, item: 'Produto C', total: 100 },
-        { id: 4, item: 'Produto D', total: 250 },
+        { id: 1, item: 'Produto A', total: 300 },
+        { id: 2, item: 'Produto B', total: 250 },
+        { id: 3, item: 'Produto C', total: 200 },
+        { id: 4, item: 'Produto D', total: 150 },
+        { id: 5, item: 'Produto E', total: 100 },
+        { id: 6, item: 'Produto F', total: 200 },
+        { id: 7, item: 'Produto G', total: 250 },
+        { id: 8, item: 'Produto H', total: 300 },
+        { id: 9, item: 'Produto I', total: 400 },
+        { id: 10, item: 'Produto J', total: 350 },
+        { id: 11, item: 'Produto K', total: 200 },
+        { id: 12, item: 'Produto L', total: 300 },
     ]);
 
     // Calcula o total geral
     const totalGeral = vendas.reduce((acc, venda) => acc + venda.total, 0);
 
     return (
-        <div className="vendas-diarias-container">
+        <div className="vendas-semanais-container">
             <Link to="/relatorios" style={{ textDecoration: 'none', color: 'black', marginBottom: '20px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
                 <FaArrowLeft style={{ marginRight: '8px' }} />
                 Voltar
             </Link>
-            <h1 className="vendas-diarias-title">Vendas Diárias</h1>
+            <h1 className="vendas-semanais-title">Vendas Semanais</h1>
 
             {/* Tabela de vendas */}
-            <table className="vendas-diarias-table">
+            <table className="vendas-semanais-table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -44,11 +52,11 @@ const VendasDiarias = () => {
             </table>
 
             {/* Total Geral */}
-            <div className="vendas-diarias-total">
+            <div className="vendas-semanais-total">
                 <h2>Total Geral: R$ {totalGeral.toFixed(2)}</h2>
             </div>
         </div>
     );
 };
 
-export default VendasDiarias;
+export default VendasSemanais;

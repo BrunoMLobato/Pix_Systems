@@ -1,0 +1,30 @@
+.vendas-mensais-title {
+    font-size: 24px;
+    color: #223350;
+    margin-bottom: 20px;
+}
+
+.vendas-mensais-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.vendas-mensais-table th,
+.vendas-mensais-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.vendas-mensais-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.vendas-mensais-total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #223350;
+}

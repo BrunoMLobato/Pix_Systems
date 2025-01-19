@@ -7,9 +7,16 @@ import PDV from './components/PDV';
 import Stock from './components/Stock';
 import Relatorio from './components/Relatorio';
 import VendasDiarias from './components/Vendasdiarias';
+import VendasSemanais from './components/VendasSemanais';
 import AdicionarProduto from './components/AdicionarProduto';
 import Login from './components/Login';
+import GraficosDetalhados from './components/RelatorioGraficosDetalhados';
+import GraficosBarra from './components/RelatorioGraficoDeBarra';
+import GraficosLinha from './components/RelatorioGraficoDeLinha';
+import GraficosPizza from './components/RelatorioGraficoDePizza';
+
 import './App.css';
+import VendasMensais from './components/VendasMensais';
 
 const MainLayout = ({ children }) => {
   return (
@@ -42,7 +49,13 @@ const App = () => {
                 <Route path="/estoque" element={<Stock />} />
                 <Route path="/relatorios" element={<Relatorio />} />
                 <Route path="/vendas-diarias" element={<VendasDiarias />} />
+                <Route path="/vendas-semanais" element={<VendasSemanais />} />
+                <Route path="/vendas-mensais" element={<VendasMensais />} />
                 <Route path="/AdicionarProduto" element={<AdicionarProduto />} />
+                <Route path="/graficosdetalhados" element={<GraficosDetalhados />} />
+                <Route path="/graficosbarra" element={<GraficosBarra />} />
+                <Route path="/graficoslinha" element={<GraficosLinha />} />
+                <Route path="/graficospizza" element={<GraficosPizza />} />
               </Routes>
             </MainLayout>
           }
