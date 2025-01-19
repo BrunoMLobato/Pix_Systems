@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importando Link para navegação
+import { Link } from 'react-router-dom';
 import { FaHome, FaShoppingCart, FaBoxes, FaFileInvoice, FaChartBar, FaUsers, FaCog, FaSignOutAlt } from 'react-icons/fa';
 import './Sidebar.css';
 

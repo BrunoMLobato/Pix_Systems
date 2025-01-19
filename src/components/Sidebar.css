@@ -1,20 +1,20 @@
 .sidebar {
-  background-color: #C7E7E9; /* Fundo da Sidebar */
-  width: 250px; /* Largura da Sidebar */
-  height: 100vh; /* Altura da tela inteira */
+  background-color: #C7E7E9;
+  width: 250px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #457B9D; /* Azul escuro para contraste */
+  color: #457B9D;
   margin-bottom: 30px;
-  text-align: center; /* Centraliza o texto */
-  letter-spacing: 1px; /* Espaçamento das letras */
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .menu {
@@ -29,26 +29,26 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  padding: 10px 15px; /* Espaçamento interno */
-  border-radius: 8px; /* Bordas arredondadas */
-  transition: background-color 0.3s, color 0.3s; /* Suaviza as mudanças de cor */
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
 }
 
 .menu li svg {
-  margin-right: 10px; /* Espaço entre o ícone e o texto */
-  font-size: 1.2rem; /* Ajusta o tamanho do ícone */
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 .menu li:hover {
-  background-color: #ffff; /* Fundo azul escuro no hover */
-  color: #457B9D; /* Texto claro no hover */
+  background-color: #ffff;
+  color: #457B9D;
 }
 
 .menu li a {
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color: inherit; /* Herda a cor do elemento pai */
+  text-decoration: none;
+  color: inherit;
   display: flex;
   align-items: center;
-  width: 100%; /* Garante que o clique seja na área inteira */
+  width: 100%;
 }
