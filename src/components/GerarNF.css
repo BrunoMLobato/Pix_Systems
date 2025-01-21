@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.gerar-nf-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.gerar-nf-container h1 {
+    text-align: center;
+    color: #007b9e;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.nf-dados {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nf-dados div {
+    flex: 1;
+}
+
+.nf-dados p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+.nf-dados strong {
+    color: #333;
+}
+
+.nf-itens {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nf-itens th, .nf-itens td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.nf-itens th {
+    background-color: #007b9e;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nf-itens tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.nf-itens tr:hover {
+    background-color: #f1f1f1;
+}
+
+.nf-total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007b9e;
+}
+
+.nf-total span {
+    font-size: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gerar-nf-container {
+        padding: 15px;
+    }
+
+    .nf-dados {
+        flex-direction: column;
+    }
+
+    .nf-dados div {
+        margin-bottom: 10px;
+    }
+
+    .nf-itens th, .nf-itens td {
+        font-size: 0.8rem;
+    }
+
+    .nf-total {
+        font-size: 1rem;
+    }
+}

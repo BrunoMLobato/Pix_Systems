@@ -14,9 +14,10 @@ import GraficosDetalhados from './components/RelatorioGraficosDetalhados';
 import GraficosBarra from './components/RelatorioGraficoDeBarra';
 import GraficosLinha from './components/RelatorioGraficoDeLinha';
 import GraficosPizza from './components/RelatorioGraficoDePizza';
+import VendasMensais from './components/VendasMensais';
+import GerarNF from './components/GerarNF'; 
 
 import './App.css';
-import VendasMensais from './components/VendasMensais';
 
 const MainLayout = ({ children }) => {
   return (
@@ -56,6 +57,7 @@ const App = () => {
                 <Route path="/graficosbarra" element={<GraficosBarra />} />
                 <Route path="/graficoslinha" element={<GraficosLinha />} />
                 <Route path="/graficospizza" element={<GraficosPizza />} />
+                <Route path="/nfs" element={<GerarNF />} /> {/* Nova rota */}
               </Routes>
             </MainLayout>
           }
