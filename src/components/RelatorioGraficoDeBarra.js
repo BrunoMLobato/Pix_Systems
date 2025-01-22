@@ -32,18 +32,18 @@ const GraficosBarra = () => {
 
     return (
         <div style={{ marginTop: '5px' }}>
-            <Link to="/relatorios" style={{ textDecoration: 'none', color: 'black', marginBottom: '5px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
+            <Link to="/relatorios" style={{ textDecoration: 'none', color: '#223350', marginBottom: '5px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
                 <FaArrowLeft style={{ marginRight: '8px' }} />
                 Voltar
             </Link>
-            <h1 style={{ color: 'black', marginBottom: '20px' }}>Gráficos em Barra</h1>
+            <h1 style={{ color: '#223350', marginBottom: '20px' }}>Gráficos em Barra</h1>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', width: '80%', margin: '0 auto' }}>
                 <div>
-                    <h3>Vendas do Mês</h3>
+                    <h3 style={{ color: '#223350' }}>Vendas do Mês</h3>
                     <Bar data={monthlySalesData} />
                 </div>
                 <div>
-                    <h3>Vendas do Ano</h3>
+                    <h3 style={{ color: '#223350' }}>Vendas do Ano</h3>
                     <Bar data={annualSalesData} />
                 </div>
             </div>

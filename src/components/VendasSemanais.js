@@ -25,7 +25,7 @@ const VendasSemanais = () => {
 
     return (
         <div className="vendas-semanais-container">
-            <Link to="/relatorios" style={{ textDecoration: 'none', color: 'black', marginBottom: '20px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
+            <Link to="/relatorios" style={{ textDecoration: 'none', color: '#223350', marginBottom: '20px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
                 <FaArrowLeft style={{ marginRight: '8px' }} />
                 Voltar
             </Link>
@@ -53,7 +53,7 @@ const VendasSemanais = () => {
 
             {/* Total Geral */}
             <div className="vendas-semanais-total">
-                <h2>Total Geral: R$ {totalGeral.toFixed(2)}</h2>
+                <h2 style={{ fontSize: '28px' }}>Total Geral: R$ {totalGeral.toFixed(2)}</h2>
             </div>
         </div>
     );

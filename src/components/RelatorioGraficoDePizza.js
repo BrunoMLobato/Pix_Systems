@@ -29,13 +29,13 @@ const GraficosPizza = () => {
 
     return (
         <div style={{ marginTop: '5px' }}>
-            <Link to="/relatorios" style={{ textDecoration: 'none', color: 'black', marginBottom: '5px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
+            <Link to="/relatorios" style={{ textDecoration: 'none', color: '#223350', marginBottom: '5px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
                 <FaArrowLeft style={{ marginRight: '8px' }} />
                 Voltar
             </Link>
-            <h1 style={{ color: 'black', marginBottom: '20px' }}>Gráficos em Pizza</h1>
+            <h1 style={{ color: '#223350', marginBottom: '20px' }}>Gráficos em Pizza</h1>
             <div style={{ width: '30%', margin: '0 auto' }}>
-                <h3>Vendas por Produto</h3>
+                <h3 style={{ color: '#223350' }}>Vendas por Produto</h3>
                 <Pie data={pieData} />
             </div>
         </div>

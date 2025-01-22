@@ -17,7 +17,7 @@ const VendasDiarias = () => {
 
     return (
         <div className="vendas-diarias-container">
-            <Link to="/relatorios" style={{ textDecoration: 'none', color: 'black', marginBottom: '20px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
+            <Link to="/relatorios" style={{ textDecoration: 'none', color: '#223350', marginBottom: '20px', display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold' }}>
                 <FaArrowLeft style={{ marginRight: '8px' }} />
                 Voltar
             </Link>
