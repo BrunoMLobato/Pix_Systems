@@ -15,10 +15,13 @@ const Login = () => {
     const validUsername = "admin";
     const validPassword = "admin";
 
+    // Verifica se as credenciais são válidas
     if (username === validUsername && password === validPassword) {
+      // Armazena o estado de login no localStorage
       localStorage.setItem("isAuthenticated", "true");
       navigate("/dashboard"); // Redireciona para o dashboard
     } else {
+      // Exibe mensagem de erro
       setError("Usuário ou senha inválidos!");
     }
   };

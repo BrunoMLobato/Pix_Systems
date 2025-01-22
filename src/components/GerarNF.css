@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .gerar-nf-container {
     max-width: 900px;
     margin: 40px auto;
@@ -15,46 +16,42 @@
     text-align: center;
     color: #007b9e;
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
-.nf-dados {
+.nf-dados-header {
     margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 }
 
-.nf-dados div {
-    flex: 1;
+.nf-empresa,
+.nf-dados-cliente {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    width: 48%;
 }
 
-.nf-dados p {
-    margin: 5px 0;
+.nf-dados-header div,
+.nf-empresa p,
+.nf-dados-cliente p {
     font-size: 0.9rem;
-    line-height: 1.4;
-    color: #555;
-}
-
-.nf-dados strong {
-    color: #333;
+    margin-bottom: 10px;
 }
 
 .nf-itens {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .nf-itens th, .nf-itens td {
     border: 1px solid #e0e0e0;
     padding: 12px;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .nf-itens th {
@@ -70,6 +67,19 @@
 
 .nf-itens tr:hover {
     background-color: #f1f1f1;
+}
+
+.nf-dados-adicionais {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.nf-dados-adicionais p {
+    font-size: 0.9rem;
+    margin: 5px 0;
 }
 
 .nf-total {
@@ -90,11 +100,12 @@
         padding: 15px;
     }
 
-    .nf-dados {
+    .nf-dados-header {
         flex-direction: column;
     }
 
-    .nf-dados div {
+    .nf-empresa, .nf-dados-cliente {
+        width: 100%;
         margin-bottom: 10px;
     }
 

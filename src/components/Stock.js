@@ -62,7 +62,7 @@ const Stock = () => {
         <button className="filter-button">Filtros</button>
         <button
           className="add-product-button"
-          onClick={() => navigate('/AdicionarProduto', { state: { addProduct } })}
+          onClick={() => navigate('/AdicionarProduto')}
         >
           Adicionar Produto
         </button>
