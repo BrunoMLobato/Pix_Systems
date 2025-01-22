@@ -1,9 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaHome, FaShoppingCart, FaBoxes, FaFileInvoice, FaChartBar, FaUsers, FaCog, FaSignOutAlt } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaHome, FaShoppingCart, FaBoxes, FaFileInvoice, FaChartBar, FaSignOutAlt } from 'react-icons/fa';
 import './Sidebar.css';
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = (event) => {
+    event.preventDefault(); // Evita o comportamento padrão do link
+    localStorage.removeItem('authToken'); // Remove o token de autenticação (se existir)
+    navigate('/login'); // Redireciona para a página de login
+  };
+
   return (
     <div className="sidebar">
       <div className="logo">PIXSYSTEMS</div>
@@ -34,7 +42,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/sair"> {/* Exemplo de ação de sair */}
+          <Link to="/sair" onClick={handleLogout}> {/* Ação de sair */}
             <FaSignOutAlt /> Sair
           </Link>
         </li>

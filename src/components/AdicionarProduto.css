@@ -36,7 +36,7 @@
 
 .form-group label {
   display: block;
-  color: rgb(100, 99, 99);
+  color: rgb(36, 36, 36);
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -46,7 +46,7 @@
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
-  background-color: #EAF5FB;
+  background-color: #ffffff;
   border-radius: 4px;
 }
 

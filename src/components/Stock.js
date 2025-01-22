@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Stock.css';
 
 const Stock = () => {
   const navigate = useNavigate();
 
-  const products = [
+  const [products, setProducts] = useState([
     {
       name: 'iPhone 15',
       code: 'ABCDEF',
@@ -36,20 +36,33 @@ const Stock = () => {
       status: 'OK',
       description: 'D1',
     },
-  ];
+  ]);
+
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const addProduct = (newProduct) => {
+    setProducts([...products, newProduct]);
+  };
+
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="stock-container">
+      <h1 className="relatorio-title">Estoque</h1>
       <div className="stock-header">
         <input
           type="text"
           placeholder="Buscar produto"
           className="search-input"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
         <button className="filter-button">Filtros</button>
         <button
           className="add-product-button"
-          onClick={() => navigate('/AdicionarProduto')} // Redireciona para a tela de Adicionar Produto
+          onClick={() => navigate('/AdicionarProduto', { state: { addProduct } })}
         >
           Adicionar Produto
         </button>
@@ -69,7 +82,7 @@ const Stock = () => {
           </tr>
         </thead>
         <tbody>
-          {products.map((product, index) => (
+          {filteredProducts.map((product, index) => (
             <tr key={index}>
               <td>{product.name}</td>
               <td>{product.code}</td>
@@ -79,9 +92,7 @@ const Stock = () => {
               <td>{product.quantity}</td>
               <td>
                 <span
-                  className={`status-indicator ${
-                    product.status === 'OK' ? 'status-ok' : 'status-alert'
-                  }`}
+                  className={`status-indicator ${product.status === 'OK' ? 'status-ok' : 'status-alert'}`}
                 >
                   {product.status}
                 </span>

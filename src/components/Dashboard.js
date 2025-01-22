@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Para redirecionamento
 import { Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -9,13 +10,21 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { FaTag, FaMoneyBillWave, FaChartLine, FaFileExport } from 'react-icons/fa';
 import './Dashboard.css';
 
-// Registro dos módulos necessários para Chart.js
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const Dashboard = () => {
-  // Dados do gráfico
+  const navigate = useNavigate();
+  const isAuthenticated = localStorage.getItem('isAuthenticated'); // Verificar autenticação
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      navigate('/login'); // Redireciona para o login se não estiver autenticado
+    }
+  }, [isAuthenticated, navigate]);
+
   const data = {
     labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
     datasets: [
@@ -29,7 +38,6 @@ const Dashboard = () => {
     ],
   };
 
-  // Opções de configuração do gráfico
   const options = {
     responsive: true,
     plugins: {
@@ -50,29 +58,33 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
+      <h1 className="relatorio-title">Dashboard</h1>
       <div className="cards">
-        <div className="card">234 Vendas<br />R$ 2.121,00</div>
-        <div className="card">Número de Transações<br />1512</div>
-        <div className="card">Exportar dados</div>
+        <div className="card">
+          <FaTag className="icon" /> 234 Vendas <FaMoneyBillWave className="icon-inline" /> R$ 2.121,00
+        </div>
+        <div className="card">
+          <FaChartLine className="icon" /> Número de Transações <br /> 1512
+        </div>
+        <div className="card">
+          <FaFileExport className="icon" /> Exportar dados
+        </div>
       </div>
       <div className="charts">
         <div className="sales-chart">
-        <div className="chart-header">
-  <div className="time-selector">
-    <select className="time-dropdown">
-      <option value="daily">Vendas Diárias</option>
-      <option value="weekly">Vendas Semanais</option>
-      <option value="monthly">Vendas Mensais</option>
-    </select>
-  </div>
-</div>
-
+          <div className="chart-header">
+            <div className="time-selector">
+              <select className="time-dropdown">
+                <option value="daily">Vendas Diárias</option>
+                <option value="weekly">Vendas Semanais</option>
+                <option value="monthly">Vendas Mensais</option>
+              </select>
+            </div>
+          </div>
           <div className="chart-container">
-            {/* Gráfico de vendas diárias */}
             <div className="chart">
               <Bar data={data} options={options} />
             </div>
-            {/* Últimas vendas à direita do gráfico */}
             <div className="recent-sales">
               <h3>Últimas vendas</h3>
               <ul>

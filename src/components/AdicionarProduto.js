@@ -31,6 +31,9 @@ const AdicionarProduto = () => {
     imagem3: null,
   });
 
+  const categorias = ['Categoria 1', 'Categoria 2', 'Categoria 3']; // Exemplos de categorias
+  const fornecedores = ['Fornecedor A', 'Fornecedor B', 'Fornecedor C']; // Exemplos de fornecedores
+
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     if (files) {
@@ -55,7 +58,7 @@ const AdicionarProduto = () => {
           <div className="card">
             <h3>Geral</h3>
             <div className="form-group">
-              <label>Nome do Produto</label>
+              <span>Nome do Produto</span>
               <input
                 type="text"
                 name="nome"
@@ -65,38 +68,50 @@ const AdicionarProduto = () => {
               />
             </div>
             <div className="form-group">
-              <label>Categoria</label>
-              <input
-                type="text"
+              <span>Categoria</span>
+              <select
                 name="categoria"
                 value={formData.categoria}
                 onChange={handleChange}
-              />
+                required
+              >
+                <option value="">Selecione uma categoria</option>
+                {categorias.map((categoria, index) => (
+                  <option key={index} value={categoria}>{categoria}</option>
+                ))}
+              </select>
             </div>
             <div className="form-group">
-              <label>Fornecedor</label>
-              <input
-                type="text"
+              <span>Fornecedor</span>
+              <select
                 name="fornecedor"
                 value={formData.fornecedor}
                 onChange={handleChange}
-              />
+                required
+              >
+                <option value="">Selecione um fornecedor</option>
+                {fornecedores.map((fornecedor, index) => (
+                  <option key={index} value={fornecedor}>{fornecedor}</option>
+                ))}
+              </select>
             </div>
             <div className="form-group">
-              <label>Validade</label>
+              <span>Validade</span>
               <input
                 type="date"
                 name="validade"
                 value={formData.validade}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Descrição</label>
+              <span>Descrição</span>
               <textarea
                 name="descricao"
                 value={formData.descricao}
                 onChange={handleChange}
+                required
               />
             </div>
           </div>
@@ -105,25 +120,27 @@ const AdicionarProduto = () => {
           <div className="card">
             <h3>Preço</h3>
             <div className="form-group">
-              <label>Preço de Venda</label>
+              <span>Preço de Venda</span>
               <input
                 type="number"
                 name="precoVenda"
                 value={formData.precoVenda}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Preço de Custo</label>
+              <span>Preço de Custo</span>
               <input
                 type="number"
                 name="precoCusto"
                 value={formData.precoCusto}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Desconto (%)</label>
+              <span>Desconto (%)</span>
               <input
                 type="number"
                 name="desconto"
@@ -132,7 +149,7 @@ const AdicionarProduto = () => {
               />
             </div>
             <div className="form-group">
-              <label>Impostos</label>
+              <span>Impostos</span>
               <input
                 type="number"
                 name="impostos"
@@ -146,7 +163,7 @@ const AdicionarProduto = () => {
           <div className="card">
             <h3>Informações</h3>
             <div className="form-group">
-              <label>Notas Internas</label>
+              <span>Notas Internas</span>
               <textarea
                 name="notasInternas"
                 value={formData.notasInternas}
@@ -154,7 +171,7 @@ const AdicionarProduto = () => {
               />
             </div>
             <div className="form-group">
-              <label>Código Fiscal</label>
+              <span>Código Fiscal</span>
               <input
                 type="text"
                 name="codigoFiscal"
@@ -163,7 +180,7 @@ const AdicionarProduto = () => {
               />
             </div>
             <div className="form-group">
-              <label>Garantia (em meses)</label>
+              <span>Garantia (em meses)</span>
               <input
                 type="number"
                 name="garantia"
@@ -172,7 +189,7 @@ const AdicionarProduto = () => {
               />
             </div>
             <div className="form-group">
-              <label>Palavras-chave</label>
+              <span>Palavras-chave</span>
               <input
                 type="text"
                 name="palavrasChave"
@@ -181,7 +198,7 @@ const AdicionarProduto = () => {
               />
             </div>
             <div className="form-group">
-              <label>Localização no Estoque</label>
+              <span>Localização no Estoque</span>
               <input
                 type="text"
                 name="localizacao"
@@ -195,48 +212,53 @@ const AdicionarProduto = () => {
           <div className="card">
             <h3>Estoque</h3>
             <div className="form-group">
-              <label>Quantidade em Estoque</label>
+              <span>Quantidade em Estoque</span>
               <input
                 type="number"
                 name="estoqueAtual"
                 value={formData.estoqueAtual}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Estoque Máximo</label>
+              <span>Estoque Máximo</span>
               <input
                 type="number"
                 name="estoqueMax"
                 value={formData.estoqueMax}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Estoque Mínimo</label>
+              <span>Estoque Mínimo</span>
               <input
                 type="number"
                 name="estoqueMin"
                 value={formData.estoqueMin}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>SKU</label>
+              <span>SKU</span>
               <input
                 type="text"
                 name="sku"
                 value={formData.sku}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Código de Barras</label>
+              <span>Código de Barras</span>
               <input
                 type="text"
                 name="codigoBarras"
                 value={formData.codigoBarras}
                 onChange={handleChange}
+                required
               />
             </div>
           </div>
@@ -245,7 +267,7 @@ const AdicionarProduto = () => {
           <div className="card">
             <h3>Imagens</h3>
             <div className="form-group">
-              <label>Imagem 1</label>
+              <span>Imagem 1</span>
               <input
                 type="file"
                 name="imagem1"
@@ -253,7 +275,7 @@ const AdicionarProduto = () => {
               />
             </div>
             <div className="form-group">
-              <label>Imagem 2</label>
+              <span>Imagem 2</span>
               <input
                 type="file"
                 name="imagem2"
@@ -261,7 +283,7 @@ const AdicionarProduto = () => {
               />
             </div>
             <div className="form-group">
-              <label>Imagem 3</label>
+              <span>Imagem 3</span>
               <input
                 type="file"
                 name="imagem3"
@@ -274,39 +296,43 @@ const AdicionarProduto = () => {
           <div className="card">
             <h3>Medidas</h3>
             <div className="form-group">
-              <label>Peso (kg)</label>
+              <span>Peso (kg)</span>
               <input
                 type="number"
                 name="peso"
                 value={formData.peso}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Altura (cm)</label>
+              <span>Altura (cm)</span>
               <input
                 type="number"
                 name="altura"
                 value={formData.altura}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Largura (cm)</label>
+              <span>Largura (cm)</span>
               <input
                 type="number"
                 name="largura"
                 value={formData.largura}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label>Comprimento (cm)</label>
+              <span>Comprimento (cm)</span>
               <input
                 type="number"
                 name="comprimento"
                 value={formData.comprimento}
                 onChange={handleChange}
+                required
               />
             </div>
           </div>

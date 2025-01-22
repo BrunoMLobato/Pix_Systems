@@ -8,6 +8,7 @@
 .cards {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Adicionado para permitir que os cartões se ajustem em múltiplas linhas se necessário */
 }
 
 .card {
@@ -17,6 +18,22 @@
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alterado para garantir que os itens dentro do card fiquem no topo */
+    align-items: stretch; /* Alinhamento de largura total do card */
+    gap: 10px; /* Espaço entre os elementos */
+    min-width: 300px; /* Para garantir um tamanho mínimo para os cards */
+}
+
+.card .icon {
+    font-size: 2rem; /* Tamanho maior para os ícones */
+    color: #223350; /* Cor dos ícones */
+}
+
+.card .icon-inline {
+    font-size: 1.5rem; /* Tamanho dos ícones em linha */
+    color: #223350; /* Cor para ícones de notas de dinheiro */
 }
 
 .charts {
@@ -37,7 +54,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 
 .time-selector {
     background-color: #007bff;
@@ -61,7 +77,6 @@
     text-align: center;
 }
 
-
 .time-dropdown option {
     background-color: #ffffff;
     color: #000;
@@ -70,9 +85,6 @@
 .time-dropdown:focus {
     outline: none;
 }
-
-
-
 
 .chart-container {
     display: flex;
@@ -108,4 +120,49 @@
 .recent-sales ul li {
     margin-bottom: 5px;
     font-size: 14px;
+}
+
+/* Estilos adicionais para os formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-group span {
+    font-size: 14px;
+    color: #223350;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
