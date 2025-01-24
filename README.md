@@ -24,3 +24,6 @@ O **PIX SYSTEMS** é um sistema projetado para **Gerenciamento de Vendas** de pe
 O design da interface do **PIX SYSTEMS** foi desenvolvido no Figma e está disponível no link abaixo:
 
 [Figma - PIX SYSTEMS](https://www.figma.com/design/61F1VuhLppHX8WlFNAXYO1/PROJETO-AIC-III?node-id=0-1&t=Pnt0rdmXss6qASMs-1)
+
+## Previa do site (NAO FINALIZADO):
+[Site - PIX SYSTEMS](https://pix-systems.vercel.app)
